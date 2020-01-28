@@ -1,0 +1,14 @@
+{
+  "name": "ally-http-request",
+  "version": "0.0.3",
+  "description": "Promise-based HTTP request package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Jacob Baker",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
