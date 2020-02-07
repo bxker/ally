@@ -74,6 +74,21 @@ class Request {
             });
             return await response.json();
         }
+
+        this.getData = async function(url = this.url, data = this.data){
+            const response = await fetch(url, {
+                method: 'get',
+                mode: 'cors',
+                cache: 'no-cache',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                redirect: 'follow',
+                referrerPolicy: 'no-referrer'
+            });
+            console.log(response)
+        }
     }
 }
 
